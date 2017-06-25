@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">homework6</string>
+    <string name="ru_welcome">Имя студента</string>
+    <string name="ru_edit_button">Изменить</string>
+    <string name="ru_view_button">Просмотр</string>
+    <string name="ru_edit_age_button">Изменить возраст</string>
+</resources>
