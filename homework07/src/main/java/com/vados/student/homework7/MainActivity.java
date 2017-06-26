@@ -3,6 +3,7 @@ package com.vados.student.homework7;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,20 +14,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onClick(View view){
-        Intent intent;
-        switch (view.getId()){
+    public void onClick(View view) {
+        switch (view.getId()) {
             case R.id.toastsButton:
-                intent = new Intent(getApplicationContext(), ToastActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), ToastActivity.class));
                 break;
             case R.id.buttonNotifications:
-                intent = new Intent(getApplicationContext(), NotifActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), NotifActivity.class));
                 break;
             case R.id.buttonMenu:
-                intent = new Intent(getApplicationContext(), MenuActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+                break;
+            case R.id.buttonMenuContext:
+                startActivity(new Intent(getApplicationContext(), ContextMenuActivity.class));
                 break;
 
         }

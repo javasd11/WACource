@@ -26,7 +26,8 @@
 
         <activity android:name=".MenuActivity" />
         <activity android:name=".GroupMenuActivity" />
-        <activity android:name=".MenuXmlActivity"></activity>
+        <activity android:name=".MenuXmlActivity" />
+        <activity android:name=".ContextMenuActivity"></activity>
     </application>
 
 </manifest>

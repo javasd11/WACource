@@ -29,5 +29,12 @@
         android:onClick="onClick"
         android:text="Menu" />
 
+    <Button
+        android:id="@+id/buttonMenuContext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Context Menu" />
+
 
 </LinearLayout>
