@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.buttonMenuContext:
                 startActivity(new Intent(getApplicationContext(), ContextMenuActivity.class));
                 break;
+            case R.id.buttonMenuDialogs:
+                startActivity(new Intent(getApplicationContext(), DialogsActivity.class));
+                break;
 
         }
     }

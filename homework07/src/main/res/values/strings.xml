@@ -3,5 +3,15 @@
     <string name="catfood">food the cat</string>
     <string name="stop">stop</string>
     <string name="start">start</string>
+    <string name="hello">hello</string>
+    <string name="exit">Выйти?</string>
+    <string name="save_data">save data</string>
+    <string name="yes">да</string>
+    <string name="no">нет</string>
+    <string name="cancel">отмена</string>
+    <string name="saved">Данные сохранены</string>
+
+    <string name="dflt">Обычный</string>
+    <string name="horiz">Горизонтальный</string>
 
 </resources>

@@ -3,14 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WACource.iml" filepath="$PROJECT_DIR$/WACource.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WACource.iml" filepath="$PROJECT_DIR$/WACource.iml" />
-      <module fileurl="file://$PROJECT_DIR$/homework06/homework06.iml" filepath="$PROJECT_DIR$/homework06/homework06.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework06/homework06.iml" filepath="$PROJECT_DIR$/homework06/homework06.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework07/homework07.iml" filepath="$PROJECT_DIR$/homework07/homework07.iml" />
-      <module fileurl="file://$PROJECT_DIR$/homework07/homework07.iml" filepath="$PROJECT_DIR$/homework07/homework07.iml" />
       <module fileurl="file://$PROJECT_DIR$/layouts/layouts.iml" filepath="$PROJECT_DIR$/layouts/layouts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/layouts/layouts.iml" filepath="$PROJECT_DIR$/layouts/layouts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>
