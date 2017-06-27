@@ -46,13 +46,13 @@ public class DialogsActivity extends AppCompatActivity {
     public void onclick(View view) {
         switch (view.getId()) {
             case R.id.tvTime:
-                showDialog(DIALOG_TIME);
+                showMyDialog(DIALOG_TIME);
                 break;
             case R.id.tvDate:
-                showDialog(DIALOG_DATE);
+                showMyDialog(DIALOG_DATE);
                 break;
             case R.id.btnExit:
-                showDialog(DIALOG_EXIT);
+                showMyDialog(DIALOG_EXIT);
                 break;
             case R.id.btnHoriz:
                 showHorizontalProgessDialog();
@@ -63,32 +63,29 @@ public class DialogsActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    protected Dialog onCreateDialog(int id) {
 
-        switch (id){
+    private void showMyDialog(int id) {
+        switch (id) {
             case DIALOG_TIME:
-                TimePickerDialog pickerDialog = new TimePickerDialog(this, onTimeListener, myHour, myMinute, true);
-                return pickerDialog;
+                new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                        myHour = hourOfDay;
+                        myMinute = minute;
+                        tvTime.setText("Time is " + myHour + ":" + myMinute);
+                    }
+                }, myHour, myMinute, true).show();
+                break;
 
             case DIALOG_DATE:
-                DatePickerDialog tpd = new DatePickerDialog(this, onDateSetListener, myYear, myMonth, myDay);
-                return tpd;
+                new DatePickerDialog(this, onDateSetListener, myYear, myMonth, myDay).show();
+                break;
+
             case DIALOG_EXIT:
-                return alertDialog().create();
+                alertDialog().create().show();
         }
-        return super.onCreateDialog(id);
+//        return super.onCreateDialog(id);
     }
-
-
-    TimePickerDialog.OnTimeSetListener onTimeListener = new TimePickerDialog.OnTimeSetListener() {
-        @Override
-        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-            myHour = hourOfDay;
-            myMinute = minute;
-            tvTime.setText("Time is " + myHour + ":" + myMinute);
-        }
-    };
 
     DatePickerDialog.OnDateSetListener onDateSetListener = new DatePickerDialog.OnDateSetListener() {
         @Override
@@ -96,11 +93,11 @@ public class DialogsActivity extends AppCompatActivity {
             myYear = year;
             myMonth = month;
             myDay = dayOfMonth;
-            tvDate.setText("Today is " + myDay + "/" + myMonth + "/" + myYear);
+            tvDate.setText("Today is " + myDay + "/" + myMonth+ "/" + myYear);
         }
     };
 
-    private AlertDialog.Builder alertDialog(){
+    private AlertDialog.Builder alertDialog() {
         AlertDialog.Builder adb = new AlertDialog.Builder(this);
         // заголовок
         adb.setTitle(R.string.exit);
@@ -123,7 +120,7 @@ public class DialogsActivity extends AppCompatActivity {
     OnClickListener myClickListener = new OnClickListener() {
         @Override
         public void onClick(DialogInterface dialog, int which) {
-            switch (which){
+            switch (which) {
                 case Dialog.BUTTON_POSITIVE:
                     saveData();
                     break;
@@ -138,10 +135,10 @@ public class DialogsActivity extends AppCompatActivity {
     };
 
     private void saveData() {
-        Toast.makeText(this,R.string.saved, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, R.string.saved, Toast.LENGTH_LONG).show();
     }
 
-    private void showDefaultProgtessDialog(){
+    private void showDefaultProgtessDialog() {
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Title");
         progressDialog.setMessage("Message");
@@ -154,7 +151,7 @@ public class DialogsActivity extends AppCompatActivity {
         progressDialog.show();
     }
 
-    private void showHorizontalProgessDialog(){
+    private void showHorizontalProgessDialog() {
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Title");
         progressDialog.setMessage("Message");

@@ -82,9 +82,7 @@ public class ContextMenuActivity extends AppCompatActivity {
                 tvSize.setTextSize(30);
                 tvSize.setText("text size= 30");
                 break;
-
         }
-
         return super.onContextItemSelected(item);
     }
 }
