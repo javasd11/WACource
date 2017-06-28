@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/WACource.iml" filepath="$PROJECT_DIR$/WACource.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework06/homework06.iml" filepath="$PROJECT_DIR$/homework06/homework06.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework07/homework07.iml" filepath="$PROJECT_DIR$/homework07/homework07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework08/homework08.iml" filepath="$PROJECT_DIR$/homework08/homework08.iml" />
       <module fileurl="file://$PROJECT_DIR$/layouts/layouts.iml" filepath="$PROJECT_DIR$/layouts/layouts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lec12_2/lec12_2.iml" filepath="$PROJECT_DIR$/lec12_2/lec12_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lec13/lec13.iml" filepath="$PROJECT_DIR$/lec13/lec13.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>

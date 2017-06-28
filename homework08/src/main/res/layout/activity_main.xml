@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vados.wacource.homework08.MainActivity">
+
+    <Button
+        android:id="@+id/btnSimpleAdaptor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="simple adaptor"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/btnMySimpleAdaptor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" not simple adaptor"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/btnSimpleSpiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Spiner"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnArrayAdaptor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ArrayAdaptor"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnMyArrayAdaptor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyArrayAdaptor"
+        android:onClick="onClick"/>
+
+
+</LinearLayout>
