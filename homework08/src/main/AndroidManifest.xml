@@ -20,7 +20,9 @@
         <activity android:name=".MySimpleAdaptorActivity" />
         <activity android:name=".SimpleSpinerActivity" />
         <activity android:name=".ArrayAdaptorActivity" />
-        <activity android:name=".MyArrayAdaptorActivity"></activity>
+        <activity android:name=".MyArrayAdaptorActivity" />
+        <activity android:name=".SimpleAdaptor2Activity" />
+        <activity android:name=".CustomArrayAdaptorActivity"></activity>
     </application>
 
 </manifest>

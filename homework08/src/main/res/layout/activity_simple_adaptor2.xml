@@ -5,12 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.vados.wacource.homework08.ArrayAdaptorActivity">
+    tools:context="com.vados.wacource.homework08.SimpleAdaptorActivity">
 
     <ListView
-        android:id="@+id/lvArray"
+        android:id="@+id/lvSimple2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </ListView>
 
 </LinearLayout>
+

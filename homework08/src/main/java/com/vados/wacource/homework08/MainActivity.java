@@ -18,18 +18,32 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btnSimpleAdaptor:
                 startActivity(new Intent(getApplicationContext(), SimpleAdaptorActivity.class));
                 break;
+
+            case R.id.btnSimpleAdaptor2:
+                startActivity(new Intent(getApplicationContext(), SimpleAdaptor2Activity.class));
+                break;
+
             case R.id.btnMySimpleAdaptor:
                 startActivity(new Intent(getApplicationContext(), MySimpleAdaptorActivity.class));
                 break;
+
             case R.id.btnSimpleSpiner:
                 startActivity(new Intent(getApplicationContext(), SimpleSpinerActivity.class));
                 break;
+
             case R.id.btnArrayAdaptor:
                 startActivity(new Intent(getApplicationContext(), ArrayAdaptorActivity.class));
                 break;
+
             case R.id.btnMyArrayAdaptor:
                 startActivity(new Intent(getApplicationContext(), MyArrayAdaptorActivity.class));
                 break;
+
+            case R.id.btnCustomArrayAdaptor:
+                startActivity(new Intent(getApplicationContext(), CustomArrayAdaptorActivity.class));
+                break;
+
+
 
         }
     }
