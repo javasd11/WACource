@@ -43,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), CustomArrayAdaptorActivity.class));
                 break;
 
+            case R.id.btnSelectAdaptor:
+                startActivity(new Intent(getApplicationContext(), SelectListActivity.class));
+                break;
+
+            case R.id.btnMultiSelectAdaptor:
+                startActivity(new Intent(getApplicationContext(), MultiSelectActivity.class));
+                break;
 
 
         }

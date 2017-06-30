@@ -45,8 +45,12 @@ public class StudentAdapter extends ArrayAdapter<Student> {
         TextView lastName = (TextView) convertView.findViewById(R.id.textLAstName);
         lastName.setText(student.lastName);
 
-        TextView age = (TextView) convertView.findViewById(R.id.textAge);
-        age.setText(String.valueOf(student.age));
+        if (position>10){
+            TextView age = (TextView) convertView.findViewById(R.id.textAge);
+            age.setText(String.valueOf(student.age));
+        }
+
+
 
         return convertView;
 

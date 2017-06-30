@@ -22,7 +22,9 @@
         <activity android:name=".ArrayAdaptorActivity" />
         <activity android:name=".MyArrayAdaptorActivity" />
         <activity android:name=".SimpleAdaptor2Activity" />
-        <activity android:name=".CustomArrayAdaptorActivity"></activity>
+        <activity android:name=".CustomArrayAdaptorActivity" />
+        <activity android:name=".SelectListActivity" />
+        <activity android:name=".MultiSelectActivity"></activity>
     </application>
 
 </manifest>

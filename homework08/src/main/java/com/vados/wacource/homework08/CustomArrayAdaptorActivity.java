@@ -2,7 +2,10 @@ package com.vados.wacource.homework08;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.vados.wacource.homework08.domain.Student;
 
@@ -25,7 +28,29 @@ public class CustomArrayAdaptorActivity extends AppCompatActivity {
             mStudents.add(new Student("ivan_"+i,"Ivanov_"+i, 20+i));
         }
 
-        StudentAdapter studentAdapter = new StudentAdapter(this,R.layout.student_item,mStudents);
+        final StudentAdapter studentAdapter = new StudentAdapter(this, R.layout.student_item, mStudents);
         listView.setAdapter(studentAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Student student = mStudents.get(position);
+                Toast.makeText(getApplicationContext(), student.toString(), Toast.LENGTH_LONG).show();
+                student.age = 0;
+                mStudents.set(position, student);
+                studentAdapter.notifyDataSetChanged();
+
+            }
+        });
+
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                return false;
+            }
+        });
     }
+
+
+
 }

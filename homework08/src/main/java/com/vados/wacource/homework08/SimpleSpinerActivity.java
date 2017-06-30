@@ -26,7 +26,7 @@ public class SimpleSpinerActivity extends AppCompatActivity {
         // заголовок
         spinner.setPrompt("Title");
         // выделяем элемент
-        spinner.setSelection(1);
+        //spinner.setSelection(1);
         // устанавливаем обработчик нажатия
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
