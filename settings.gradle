@@ -1,1 +1,1 @@
-include ':homework06', ':test', ':homework07', ':layouts', ':homework08', ':lec12_2', ':lec13'
+include ':homework06', ':test', ':homework07', ':layouts', ':homework08', ':lec12_2', ':lec13', ':lec14'
