@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MultiSelectActivity extends AppCompatActivity {
+public class SelectMultiArrayAdaptorActivity extends AppCompatActivity {
     private ListView listView;
 
     @Override

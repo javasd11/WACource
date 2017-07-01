@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SimpleAdaptor2Activity extends AppCompatActivity {
+public class SimpleAdaptor_Object_Activity extends AppCompatActivity {
    public static final String KEY_NAME ="name";
    public static final String KEY_LAST_NAME ="lastname";
    public static final String KEY_AGE ="age";

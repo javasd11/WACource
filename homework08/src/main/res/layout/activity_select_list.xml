@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.vados.wacource.homework08.SelectListActivity">
+    tools:context="com.vados.wacource.homework08.SelectSingleArrayAdaptorActivity">
 
     <ListView
         android:id="@+id/lvArraySelect"

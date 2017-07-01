@@ -7,7 +7,7 @@ import android.widget.ListView;
 
 import com.vados.wacource.homework08.domain.Student;
 
-public class MyArrayAdaptorActivity extends AppCompatActivity {
+public class ArrayAdaptorMyActivity extends AppCompatActivity {
 
     ListView listView;
 
@@ -26,9 +26,7 @@ public class MyArrayAdaptorActivity extends AppCompatActivity {
                 new Student("Ivan4", "Ivanov4", 20),
         };
 
-        ArrayAdapter<Student> adapter = new ArrayAdapter<Student>(this,
-                android.R.layout.simple_list_item_1,
-                android.R.id.text1, students);
+        ArrayAdapter<Student> adapter = new ArrayAdapter<Student>(this, android.R.layout.simple_list_item_1, students);
 
         listView.setAdapter(adapter);
     }

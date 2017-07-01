@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class SimpleSpinerActivity extends AppCompatActivity {
+public class SpinerSimpleActivity extends AppCompatActivity {
 
     String[] data = {"one", "two", "three", "four", "five"};
     private Spinner spinner;

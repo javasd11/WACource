@@ -16,19 +16,19 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnSimpleAdaptor:
-                startActivity(new Intent(getApplicationContext(), SimpleAdaptorActivity.class));
+                startActivity(new Intent(getApplicationContext(), SimpleAdaptor_Text_Activity.class));
                 break;
 
             case R.id.btnSimpleAdaptor2:
-                startActivity(new Intent(getApplicationContext(), SimpleAdaptor2Activity.class));
+                startActivity(new Intent(getApplicationContext(), SimpleAdaptor_Object_Activity.class));
                 break;
 
             case R.id.btnMySimpleAdaptor:
-                startActivity(new Intent(getApplicationContext(), MySimpleAdaptorActivity.class));
+                startActivity(new Intent(getApplicationContext(), SimpleAdaptorCustomActivity.class));
                 break;
 
             case R.id.btnSimpleSpiner:
-                startActivity(new Intent(getApplicationContext(), SimpleSpinerActivity.class));
+                startActivity(new Intent(getApplicationContext(), SpinerSimpleActivity.class));
                 break;
 
             case R.id.btnArrayAdaptor:
@@ -36,19 +36,19 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btnMyArrayAdaptor:
-                startActivity(new Intent(getApplicationContext(), MyArrayAdaptorActivity.class));
+                startActivity(new Intent(getApplicationContext(), ArrayAdaptorMyActivity.class));
                 break;
 
             case R.id.btnCustomArrayAdaptor:
-                startActivity(new Intent(getApplicationContext(), CustomArrayAdaptorActivity.class));
+                startActivity(new Intent(getApplicationContext(), ArrayAdaptorCustomActivity.class));
                 break;
 
             case R.id.btnSelectAdaptor:
-                startActivity(new Intent(getApplicationContext(), SelectListActivity.class));
+                startActivity(new Intent(getApplicationContext(), SelectSingleArrayAdaptorActivity.class));
                 break;
 
             case R.id.btnMultiSelectAdaptor:
-                startActivity(new Intent(getApplicationContext(), MultiSelectActivity.class));
+                startActivity(new Intent(getApplicationContext(), SelectMultiArrayAdaptorActivity.class));
                 break;
 
 

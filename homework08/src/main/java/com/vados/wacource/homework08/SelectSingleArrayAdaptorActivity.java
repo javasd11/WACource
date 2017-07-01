@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
-public class SelectListActivity extends AppCompatActivity {
+public class SelectSingleArrayAdaptorActivity extends AppCompatActivity {
     private ListView listView;
 
     @Override

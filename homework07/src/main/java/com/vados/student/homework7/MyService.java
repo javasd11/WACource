@@ -61,6 +61,7 @@ public class MyService extends Service {
                 .setContentText("Notification text 1")
                 .setWhen(System.currentTimeMillis())
                 .setContentIntent(pendingIntent).build();
+
         notification.flags |= Notification.FLAG_AUTO_CANCEL
                 | Notification.FLAG_ONGOING_EVENT
                 | Notification.FLAG_NO_CLEAR;

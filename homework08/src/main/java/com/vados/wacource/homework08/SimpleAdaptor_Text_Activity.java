@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SimpleAdaptorActivity extends AppCompatActivity {
+public class SimpleAdaptor_Text_Activity extends AppCompatActivity {
 
     // имена атрибутов для Map
     final String ATTRIBUTE_NAME_TEXT = "text";

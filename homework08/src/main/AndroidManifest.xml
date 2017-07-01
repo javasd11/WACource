@@ -16,15 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SimpleAdaptorActivity" />
-        <activity android:name=".MySimpleAdaptorActivity" />
-        <activity android:name=".SimpleSpinerActivity" />
+        <activity android:name=".SimpleAdaptor_Text_Activity" />
+        <activity android:name=".SimpleAdaptorCustomActivity" />
+        <activity android:name=".SpinerSimpleActivity" />
         <activity android:name=".ArrayAdaptorActivity" />
-        <activity android:name=".MyArrayAdaptorActivity" />
-        <activity android:name=".SimpleAdaptor2Activity" />
-        <activity android:name=".CustomArrayAdaptorActivity" />
-        <activity android:name=".SelectListActivity" />
-        <activity android:name=".MultiSelectActivity"></activity>
+        <activity android:name=".ArrayAdaptorMyActivity" />
+        <activity android:name=".SimpleAdaptor_Object_Activity" />
+        <activity android:name=".ArrayAdaptorCustomActivity" />
+        <activity android:name=".SelectSingleArrayAdaptorActivity" />
+        <activity android:name=".SelectMultiArrayAdaptorActivity"></activity>
     </application>
 
 </manifest>

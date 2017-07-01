@@ -12,28 +12,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text="simple adaptor" />
+        android:text="simple adaptor text" />
 
     <Button
         android:id="@+id/btnSimpleAdaptor2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text="simple adaptor2" />
+        android:text="simple adaptor object" />
 
     <Button
         android:id="@+id/btnMySimpleAdaptor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text=" not simple adaptor" />
+        android:text=" custom simple adaptor" />
 
     <Button
         android:id="@+id/btnSimpleSpiner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text=" simple spiner" />
+        android:text=" speiner simple" />
 
     <Button
         android:id="@+id/btnArrayAdaptor"
@@ -47,28 +47,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text="MyArrayAdaptor" />
+        android:text="array adaptor object" />
 
     <Button
         android:id="@+id/btnCustomArrayAdaptor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text="Custom Array Adaptor" />
+        android:text="Array Adaptor custom" />
 
     <Button
         android:id="@+id/btnSelectAdaptor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text="single Select" />
+        android:text="Select single arraydaptor" />
 
     <Button
         android:id="@+id/btnMultiSelectAdaptor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text="single Select" />
+        android:text="Select multi arayadaptor" />
 
 
 </LinearLayout>
