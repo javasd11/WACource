@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GridListActivity" />
-        <activity android:name=".ExpandableListActivity"></activity>
+        <activity android:name=".ExpandableListActivity" />
+        <activity android:name=".ExpandableList_CustomActivity"></activity>
     </application>
 
 </manifest>

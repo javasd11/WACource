@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, ExpandableListActivity.class));
                 break;
             case R.id.btn3:
-//                startActivity(new Intent(this, ));
+                startActivity(new Intent(this, ExpandableList_CustomActivity.class));
                 break;
             case R.id.btn4:
 //                startActivity(new Intent(this, ));
