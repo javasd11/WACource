@@ -19,16 +19,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this,GridListActivity.class));
                 break;
             case R.id.btn2:
-                //startActivity(this, new Intent());
+                startActivity(new Intent(this, ExpandableListActivity.class));
                 break;
             case R.id.btn3:
-                //startActivity(this, new Intent());
+//                startActivity(new Intent(this, ));
                 break;
             case R.id.btn4:
-                //startActivity(this, new Intent());
+//                startActivity(new Intent(this, ));
                 break;
             case R.id.btn5:
-                //startActivity(this, new Intent());
+//                startActivity(new Intent(this, ));
                 break;
         }
     }
