@@ -1,6 +1,7 @@
 package com.vados.wacource.homework09.adapters;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,10 +55,18 @@ public class ExpandableStudentAdaper extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         convertView = mInflater.inflate(mGroupResource, null);
+        TextView textView =  (TextView) convertView.findViewById(R.id.txtViewGrouptName);
 
         Group group = mGroups.get(groupPosition);
 
-        ((TextView) convertView.findViewById(R.id.txtViewGrouptName)).setText(group.GroupName);
+        if(isExpanded){
+            textView.setTextColor(Color.BLUE);
+        }
+        else{
+            textView.setTextColor(Color.BLACK);
+        }
+
+        textView.setText(group.GroupName);
         return convertView;
     }
 
