@@ -33,14 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:onClick="onClick"
-        android:text="Grid" />
+        android:text="RecyclerView" />
 
-   <Button
-        android:id="@+id/btn5"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:onClick="onClick"
-        android:text="Grid" />
+
 
 
 

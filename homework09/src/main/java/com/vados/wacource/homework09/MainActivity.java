@@ -25,10 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, ExpandableList_CustomActivity.class));
                 break;
             case R.id.btn4:
-//                startActivity(new Intent(this, ));
-                break;
-            case R.id.btn5:
-//                startActivity(new Intent(this, ));
+                startActivity(new Intent(this, RecyclerViewActivity.class));
                 break;
         }
     }

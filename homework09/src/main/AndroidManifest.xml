@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".GridListActivity" />
         <activity android:name=".ExpandableListActivity" />
-        <activity android:name=".ExpandableList_CustomActivity"></activity>
+        <activity android:name=".ExpandableList_CustomActivity" />
+        <activity android:name=".RecyclerViewActivity"></activity>
     </application>
 
 </manifest>
