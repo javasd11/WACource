@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.vados.wacource.homework09.R;
@@ -19,6 +20,11 @@ import java.util.ArrayList;
  */
 
 public class ExpandableStudentAdaper extends BaseExpandableListAdapter {
+    // картинки для отображения динамики
+    final static int up_image = android.R.drawable.arrow_up_float;
+    final static int down_image = android.R.drawable.arrow_down_float;
+
+
     private ArrayList<Group> mGroups;
     private int mGroupResource;
     private int mChildResource;
@@ -55,14 +61,21 @@ public class ExpandableStudentAdaper extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         convertView = mInflater.inflate(mGroupResource, null);
-        TextView textView =  (TextView) convertView.findViewById(R.id.txtViewGrouptName);
+        TextView textView = (TextView) convertView.findViewById(R.id.txtViewGrouptName);
+        ImageView imageView = (ImageView) convertView.findViewById(R.id.vieIndicator);
 
         Group group = mGroups.get(groupPosition);
 
-        if(isExpanded){
-            textView.setTextColor(Color.BLUE);
+        if (getChildrenCount(groupPosition)==0){
+            imageView.setVisibility(View.INVISIBLE);
         }
-        else{
+        if (isExpanded) {
+            imageView.setBackgroundColor(Color.RED);
+            imageView.setImageResource(down_image);
+            textView.setTextColor(Color.BLUE);
+        } else {
+            imageView.setBackgroundColor(Color.GREEN);
+            imageView.setImageResource(up_image);
             textView.setTextColor(Color.BLACK);
         }
 
@@ -74,7 +87,7 @@ public class ExpandableStudentAdaper extends BaseExpandableListAdapter {
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         convertView = mInflater.inflate(mChildResource, null);
 
-        Student student =  mGroups.get(groupPosition).students[childPosition];
+        Student student = mGroups.get(groupPosition).students[childPosition];
 
         ((TextView) convertView.findViewById(R.id.txtViewFirstName)).setText(student.firstName);
         ((TextView) convertView.findViewById(R.id.txtViewLastName)).setText(student.lastName);

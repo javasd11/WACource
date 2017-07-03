@@ -2,6 +2,7 @@ package com.vados.wacource.homework09;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ExpandableListView;
 
 import com.vados.wacource.homework09.adapters.ExpandableStudentAdaper;
@@ -12,6 +13,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class ExpandableList_CustomActivity extends AppCompatActivity {
+
+
     private ExpandableListView listView;
 
     @Override
@@ -46,6 +49,9 @@ public class ExpandableList_CustomActivity extends AppCompatActivity {
                 R.layout.child_item);
 
         listView.setAdapter(adaper);
+
+
+
 
     }
 }
