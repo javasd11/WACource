@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.vados.wacource.lec15.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,21 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.btn1:
-                startActivity(new Intent(this, Activity1.class));
-                break;
-            case R.id.btn2:
-                startActivity(new Intent(this, Activity2.class));
-                break;
-            case R.id.btn3:
-                startActivity(new Intent(this, Activity3.class));
-                break;
-            case R.id.btn4:
-                startActivity(new Intent(this, Activity4.class));
-                break;
-            case R.id.btn5:
-                startActivity(new Intent(this, Activity5.class));
-                break;
+
         }
     }
 }
