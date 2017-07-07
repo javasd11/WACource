@@ -12,34 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:onClick="onClick"
-        android:text="txt" />
+        android:text="Add new Student" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:onClick="onClick"
-        android:text="txt" />
+        android:text="List Students" />
 
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:onClick="onClick"
-        android:text="txt" />
-
-    <Button
-        android:id="@+id/btn4"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:onClick="onClick"
-        android:text="txt" />
-
-    <Button
-        android:id="@+id/btn5"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:onClick="onClick"
-        android:text="txt" />
 
 </LinearLayout>

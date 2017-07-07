@@ -1,13 +1,13 @@
-package com.example.classwork10;
+package com.example.homework10.data;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.classwork10.model.Student;
+
+import com.example.homework10.model.Student;
 
 import java.util.ArrayList;
 
