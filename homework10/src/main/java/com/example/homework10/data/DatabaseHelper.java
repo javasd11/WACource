@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 
 import com.example.homework10.model.Student;
@@ -16,10 +17,12 @@ import java.util.ArrayList;
  */
 
 public class DatabaseHelper extends SQLiteOpenHelper {
+    private Context mContext;
 
 
     public DatabaseHelper(Context context) {
         super(context, "myDB.db", null, 1);
+        mContext=context;
     }
 
     @Override
@@ -59,6 +62,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             values.put(Student.COLUMN_AGE, student.Age);
 
             id = db.insert(Student.TABLE_NAME, null, values);
+            Toast.makeText(mContext,"Student saved with id:"+id, Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -96,17 +100,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public Student getStudent(int idParam) {
         Student student = new Student();
-        Cursor cursor = getWritableDatabase().query(Student.TABLE_NAME,
-                new String[]{Student.COLUMN_ID, Student.COLUMN_FIRSTNAME, Student.COLUMN_LASTNAME, Student.COLUMN_AGE},
-                Student.COLUMN_ID + idParam, null, null, null, null);
+        Cursor cursor = null;
+        try {
+            cursor = getWritableDatabase().query(Student.TABLE_NAME,
+                    new String[]{Student.COLUMN_ID, Student.COLUMN_FIRSTNAME, Student.COLUMN_LASTNAME, Student.COLUMN_AGE},
+                    Student.COLUMN_ID + idParam, null, null, null, null);
 
-        if (cursor.moveToFirst()) {
-            student.id = cursor.getLong(cursor.getColumnIndex(Student.COLUMN_ID));
-            student.FirstName = cursor.getString(cursor.getColumnIndex(Student.COLUMN_FIRSTNAME));
-            student.LastName = cursor.getString(cursor.getColumnIndex(Student.COLUMN_LASTNAME));
-            student.Age = cursor.getLong(cursor.getColumnIndex(Student.COLUMN_AGE));
+            if (cursor.moveToFirst()) {
+                student.id = cursor.getLong(cursor.getColumnIndex(Student.COLUMN_ID));
+                student.FirstName = cursor.getString(cursor.getColumnIndex(Student.COLUMN_FIRSTNAME));
+                student.LastName = cursor.getString(cursor.getColumnIndex(Student.COLUMN_LASTNAME));
+                student.Age = cursor.getLong(cursor.getColumnIndex(Student.COLUMN_AGE));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (cursor != null) {
+            }
         }
-        cursor.close();
+
 
         return student;
     }
