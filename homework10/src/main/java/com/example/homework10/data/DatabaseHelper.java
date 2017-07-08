@@ -98,15 +98,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return students;
     }
 
-    public Student getStudent(int idParam) {
-        Student student = new Student();
+    public Student getStudent(long id) {
+        Student student = null;
+        SQLiteDatabase db = getWritableDatabase();
+
         Cursor cursor = null;
         try {
-            cursor = getWritableDatabase().query(Student.TABLE_NAME,
-                    new String[]{Student.COLUMN_ID, Student.COLUMN_FIRSTNAME, Student.COLUMN_LASTNAME, Student.COLUMN_AGE},
-                    Student.COLUMN_ID + idParam, null, null, null, null);
+            cursor = db.query(Student.TABLE_NAME, null, Student.COLUMN_ID + "=" + id, null, null, null, null);
 
             if (cursor.moveToFirst()) {
+                student = new Student();
+
                 student.id = cursor.getLong(cursor.getColumnIndex(Student.COLUMN_ID));
                 student.FirstName = cursor.getString(cursor.getColumnIndex(Student.COLUMN_FIRSTNAME));
                 student.LastName = cursor.getString(cursor.getColumnIndex(Student.COLUMN_LASTNAME));
@@ -116,11 +118,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             e.printStackTrace();
         } finally {
             if (cursor != null) {
+                cursor.close();
             }
         }
 
-
         return student;
+    }
+
+    public int updateStudent(Student student) {
+        int count = 0;
+        SQLiteDatabase db = getWritableDatabase();
+
+        try {
+            ContentValues values = new ContentValues();
+            values.put(Student.COLUMN_FIRSTNAME, student.FirstName);
+            values.put(Student.COLUMN_LASTNAME, student.LastName);
+            values.put(Student.COLUMN_AGE, student.Age);
+
+            count = db.update(Student.TABLE_NAME, values, Student.COLUMN_ID + "=" + student.id, null);
+            Toast.makeText(mContext, "student updated", Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return count;
     }
 
 

@@ -30,18 +30,14 @@
         android:id="@+id/btnSave"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:onClick="onClick"
         android:text="Save"/>
-
-    <Button
-        android:id="@+id/btnEdit"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:text="Edit"/>
 
     <Button
         android:id="@+id/btnClear"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:text="Save" />
+        android:onClick="onClick"
+        android:text="Clear" />
 
 </LinearLayout>
