@@ -27,4 +27,9 @@
         android:entryValues="@array/lang"
         android:key="list_preference_1"
         android:title="Select language" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check_box_preference_2"
+        android:title="Check box preference"
+        android:visibility="invisible" />
 </PreferenceScreen>

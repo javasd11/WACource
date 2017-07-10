@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,46 +7,101 @@
     android:orientation="vertical"
     tools:context="com.example.classwork11.MainActivity">
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="onClick"
-        android:text="Btn1" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="onClick"
-        android:text="Btn2" />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="write default pref" />
 
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="onClick"
-        android:text="Btn3" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="wrie named file preference" />
 
-    <Button
-        android:id="@+id/btn4"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="onClick"
-        android:text="Btn4" />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="read default file prference" />
 
-    <Button
-        android:id="@+id/btn5"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="onClick"
-        android:text="Btn5" />
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="read named file preference" />
 
-    <Button
-        android:id="@+id/btn6"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="onClick"
-        android:text="Btn6" />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="Preference activity" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="read from preference activity" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="write internal file" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="read internal file" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="write external file" />
+
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="read external file" />
+
+        <Button
+            android:id="@+id/btn11"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="bt " />
+
+        <Button
+            android:id="@+id/btn12"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="bt " />
+
+        <Button
+            android:id="@+id/btn13"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:text="bt" />
+
+    </LinearLayout>
+</ScrollView>
